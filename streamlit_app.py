@@ -29,15 +29,15 @@ PDF_RESUME = CONFIG_DIR / "data" / "Nikhil_Nageshwar_Inturi_Resume_bioinformatic
 
 
 # validate openai api key
-openai_api_key = os.getenv("OPENAI_API_KEY")
+openai_api_key = st.secrets["OPENAI_API_KEY"]
 if not openai_api_key:
     st.error("OpenAI API key not found in environment variables.")
 
 # validate firebase credentials
-b64_key = os.getenv(FIREBASE_SERVICE_ACCOUNT)
+b64_key = st.secrets[FIREBASE_SERVICE_ACCOUNT]
 firebase_json_key = base64.b64decode(b64_key).decode()
 firebase_credentials = json.loads(firebase_json_key)
-# firebase_json_key_file = os.getenv("FIREBASE_JSON_KEY")
+# firebase_json_key_file = st.secrets["FIREBASE_JSON_KEY"]
 # if not firebase_json_key_file:
 #     st.error("Firebase JSON key file not found in environment variables.")
 # with open(firebase_json_key_file, "r", encoding="utf‑8") as f:
