@@ -1,5 +1,5 @@
 # imports
-import os, json, firebase_admin, streamlit as st, uuid, datetime
+import os, json, firebase_admin, streamlit as st, uuid, datetime, base64
 from constants import *
 from pathlib import Path
 from dotenv import load_dotenv
@@ -34,7 +34,7 @@ if not openai_api_key:
     st.error("OpenAI API key not found in environment variables.")
 
 # validate firebase credentials
-b64_key = st.secrets[FIREBASE_SERVICE_ACCOUNT]
+b64_key = st.secrets["FIREBASE_SERVICE_ACCOUNT"]
 firebase_json_key = base64.b64decode(b64_key).decode()
 firebase_credentials = json.loads(firebase_json_key)
 # firebase_json_key_file = st.secrets["FIREBASE_JSON_KEY"]
