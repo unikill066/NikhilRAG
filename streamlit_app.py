@@ -67,7 +67,7 @@ else:
 ###############
 
 # STREAMLIT APP
-st.title("NikhilGPT - Nikhil's resume bot")
+st.title("NikhilRAG - Nikhil's resume bot")
 st.image("misc/nik.png", use_container_width=True)
 with st.expander("Note:"):
     st.write("""This chatbot, powered by the GPT‑3.5‑turbo language model, is designed to answer questions about Nikhil’s professional background, publications, projects, and qualifications. Conversations are stored to help improve the quality of responses. Please keep inquiries respectful and avoid personal or inappropriate topics.""")
