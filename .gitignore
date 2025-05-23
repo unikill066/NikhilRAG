@@ -1,4 +1,7 @@
 .env
+.DS_Store
 data_copy
 nikhilrag-2af58-firebase-adminsdk-fbsvc-703e200eaf.json
 nikhilrag-2af58-firebase-adminsdk-fbsvc-47ee54f6e0.json
+__pycache__
+data/.DS_Store
