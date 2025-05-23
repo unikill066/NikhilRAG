@@ -12,7 +12,7 @@ NikhilRAG is a GPT-powered RAG chatbot that answers questions about my skills & 
 
 ## Quick-start
 
-### 1  Clone & install
+### 1. Clone & install
 
 ```bash
 git clone https://github.com/unikill066/NikhilRAG.git
@@ -21,7 +21,7 @@ python -m venv .venv && source .venv/bin/activate   # optional but recommended
 pip install -r requirements.txt
 ```
 
-### 2  Set environment variables
+### 2. Set environment variables
 
 Create a **`.env`** file (auto‑loaded by *python‑dotenv*) or export them in your shell:
 
@@ -37,7 +37,7 @@ GOOGLE_CLIENT_EMAIL=service‑acct@your‑gcp‑project.iam.gserviceaccount.com
 GOOGLE_PRIVATE_KEY="-----BEGIN PRIVATE KEY-----\n...\n-----END PRIVATE KEY-----\n"  # convert .json to base64 format
 ```
 
-### 3  Run locally
+### 3. Run locally
 
 ```bash
 streamlit run streamlit_app.py
@@ -107,6 +107,13 @@ python streamlit_app.py
 
 Licensed under the **MIT License** – see the [LICENSE](LICENSE) file for details.
 
-## Acknowledgements
-
-Built using [LangChain](https://python.langchain.com/), [Firebase](https://firebase.google.com/), [LangSmith](https://smith.langchain.com/), [FAISS](https://faiss.ai/), and [Streamlit](https://streamlit.io/).
+## Acknowledgements and References
+- [LangChain](https://python.langchain.com/)
+- [Firebase](https://firebase.google.com/)
+- [LangSmith](https://smith.langchain.com/)
+- [LangChain Prompt Templates](https://lagnchain.readthedocs.io/en/latest/modules/prompts/prompt_templates/getting_started.html)
+- [resumeGPT](https://github.com/kredar/resumeGPT?tab=readme-ov-file)
+- [FAISS](https://faiss.ai/)
+- [Streamlit](https://streamlit.io/)
+- [Streamlit Secrets](https://docs.streamlit.io/develop/api-reference/connections/st.secrets)
+- [Github Documentation](https://github.com/Wytamma/write-the-code)
